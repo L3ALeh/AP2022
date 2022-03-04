@@ -3,16 +3,16 @@
 <?php
     $title = "Créer une nouvelle demarche si l'entreprise existe";
 
-    include_once '../includes/header.php';
-    include_once '../middlewares/etudiant.php';
+    include '../includes/header.php';
+    include '../middlewares/etudiant.php';
 
-    include_once '../back_end/recherche_entreprise.php';
-    include_once '../back_end/creer_contact.php';
+    include '../back_end/recherche_entreprise.php';
+    include '../back_end/creer_contact.php';
 ?>
 
 <body>
 <?php
-    include_once '../includes/barnav.php';
+    include '../includes/barnav.php';
 ?>
 <div class="lime-container">
         <div class="lime-body">
@@ -41,21 +41,22 @@
 
 
                                 <form method="POST" action="..\back_end\creer_contact.php" id="creer_contact" name="creer_contact" class="mt-4">
-                                    <div class="form-group">
-                                        <label for="comment">Nom contact </label>
-                                        <input type="text" class="form-control " id="nom_contact"  name="nom_contact"  required>
+                                <div class="form-group">
+                                        <input type ="hidden" name="id_entreprise" value="<?php echo $_GET['id'];?>">
+                                        <label for="nom">Nom contact </label>
+                                        <input type="text" class="form-control " id="nom_contact"  name="nom_salarie"  required>
                                     </div>
                                     <div class="form-group">
-                                    <label for="comment">Prénom contact </label>
-                                        <input type="text" class="form-control " id="prenom_contact"  name="prenom_contact"  required>
+                                    <label for="prenom">Prénom contact </label>
+                                        <input type="text" class="form-control " id="prenom_contact"  name="prenom_salarie"  required>
                                     </div>
                                     <div class="form-group">
-                                    <label for="comment">Tel contact </label>
-                                        <input type="text" class="form-control " id="tel_contact"  name="tel_contact"  required>
+                                    <label for="tel">Tel contact </label>
+                                        <input type="text" class="form-control " id="tel_contact"  name="tel"  required>
                                     </div>
                                     <div class="form-group">
-                                    <label for="comment">Courriel </label>
-                                        <input type="text" class="form-control " id="email_contact"  name="email_contact"  required>
+                                    <label for="courriel">Courriel </label>
+                                        <input type="text" class="form-control " id="courriel_contact"  name="courriel"  required>
                                     </div>
 
                                     <div class="mt-3">

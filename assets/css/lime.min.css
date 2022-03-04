@@ -1471,6 +1471,10 @@ strong {
     background: #06ba54
 }
 
+.badge1.badge-success {
+        background: red
+}
+
 .badge.badge-danger {
     background: #eb3f3f
 }

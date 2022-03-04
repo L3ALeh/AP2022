@@ -9,10 +9,10 @@
 <?php
     $title = "Créer une nouvelle entreprise";
      // inclusion des fichiers hedaer, tt du type d'utilisateur
-    include_once '../includes/header.php';
-    include_once '../middlewares/etudiant.php';
+    include '../includes/header.php';
+    include '../middlewares/etudiant.php';
      // inclusion des fichiers de traitements de données
-    include_once '../back_end/creer_entreprise.php';
+    include '../back_end/creer_entreprise.php';
 ?>
 
 <body>
